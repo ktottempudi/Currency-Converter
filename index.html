@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h2> Welcome to the currency converter </h2>
+
+	<div class="information">
+		<input type="number" id="initialNum" placeholder="Input initial amount here" />
+
+		<select id="inputMenu" class="menu">
+			<option value="" disabled selected>Choose Base Currency</option>
+			<option value="Pound">British Pound</option>
+			<option value="Dollar">American Dollar</option>
+			<option value="Euro">Euro</option>
+			<option value="Yen">Japanese Yen</option>
+			<option value="Won">Korean Won</option>
+			<option value="Dirham">Emirates Dirham</option>
+			<option value="Yuan">Chinese Yuan</option>
+			<option value="Rupee">Indian Rupee</option>
+			<option value="Franc">Swiss Franc</option>
+		</select> 
+		<br>
+		<br>
+		<input type="button" id="convert" value="Convert Currency" 
+		onclick="convert_money(document.getElementById('initialNum').value, document.getElementById('inputMenu').value, document.getElementById('outputMenu').value)" />
+
+		<br>
+		<br>
+
+		<input type="textbox" id="output" placeholder="output" />
+
+		<select id="outputMenu" class="menu">
+			<option value="" disabled selected>Choose Target Currency</option>
+			<option value="Pound">British Pound</option>
+			<option value="Dollar">American Dollar</option>
+			<option value="Euro">Euro</option>
+			<option value="Yen">Japanese Yen</option>
+			<option value="Won">Korean Won</option>
+			<option value="Dirham">Emirates Dirham</option>
+			<option value="Yuan">Chinese Yuan</option>
+			<option value="Rupee">Indian Rupee</option>
+			<option value="Franc">Swiss Franc</option>
+		</select> 
+
+
+	</div>
+
+	<script type="text/javascript" src="converter.js"></script>
+	
+</body>
+</html>
